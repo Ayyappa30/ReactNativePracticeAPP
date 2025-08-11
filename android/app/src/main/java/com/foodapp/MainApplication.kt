@@ -1,4 +1,4 @@
-package com.foodapp
+package com.ardd.ecommerce
 
 import android.app.Application
 import com.facebook.react.PackageList

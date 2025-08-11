@@ -2,6 +2,8 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
+import RNBootSplash
+import Firebase
 
 @main
 class AppDelegate: RCTAppDelegate {
@@ -9,11 +11,19 @@ class AppDelegate: RCTAppDelegate {
     self.moduleName = "foodapp"
     self.dependencyProvider = RCTAppDependencyProvider()
 
+  
     // You can add your custom initial props in the dictionary below.
     // They will be passed down to the ViewController used by React Native.
     self.initialProps = [:]
-
+     // Add me --- \/
+  FirebaseApp.configure()
+  // Add me --- /\
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+
+   override func customize(_ rootView: RCTRootView!) {
+    super.customize(rootView)
+    RNBootSplash.initWithStoryboard("BootSplash", rootView: rootView) // ⬅️ initialize the splash screen
   }
 
   override func sourceURL(for bridge: RCTBridge) -> URL? {

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943506216480",
+    "project_id": "e-commercern-app",
+    "storage_bucket": "e-commercern-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943506216480:android:8a33f860eade1f34d94e45",
+        "android_client_info": {
+          "package_name": "com.ardd.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xgE30BS-nnBEDtZ7lk_WtFfEGLmzGoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
